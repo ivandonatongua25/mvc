@@ -5,7 +5,8 @@ const port = 3000;
 const path = require("path");
 app.use(express.static("public"));
 
-
+const mainRouter = require("./routers/main");   
+app.use("./main",mainRouter);
 
 app.get("/",(req,res)=>{
     res.sendFile(path.resolve("views/home.html"));

@@ -13,9 +13,9 @@ router.get("/about",(req,res)=>{
 
 });
 */
-const maicontroller = require("../controllers/maincontrollers");
-router.get("/",maicontroller.index)
-router.get("/about",maicontroller.about)
+const maincontroller = require("../controllers/maincontrollers");
+router.get("/",maincontroller.index)
+router.get("/about",maincontroller.about)
 
 
 module.exports= router;

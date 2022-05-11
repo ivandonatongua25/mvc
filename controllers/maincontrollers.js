@@ -6,6 +6,7 @@ const maicontroller= {
     about: (req,res)=>{
         res.sendFile(path.resolve("views/about.html"));
     }
+    
 
 }
 module.exports = maicontroller;
